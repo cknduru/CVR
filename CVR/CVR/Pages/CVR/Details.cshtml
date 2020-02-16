@@ -1,0 +1,151 @@
+﻿@page
+@model CVR.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>CvrEntry</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.VAT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.VAT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Zipcode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Zipcode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.City)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.protected)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.protected)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Fax)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Fax)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Startdate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Startdate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Enddate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Enddate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Employees)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Employees)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Addressco)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Addressco)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Industrycode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Industrycode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Industrydesc)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Industrydesc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Companycode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Companycode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Companydesc)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Companydesc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Creditstartdate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Creditstartdate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Creditstatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Creditstatus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Creditbankrupt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Creditbankrupt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.T)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.T)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CvrEntry.Version)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CvrEntry.Version)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CvrEntry.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

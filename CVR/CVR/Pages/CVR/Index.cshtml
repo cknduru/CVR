@@ -1,0 +1,162 @@
+﻿@page
+@model CVR.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].VAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Zipcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].protected)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Fax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Startdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Enddate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Employees)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Addressco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Industrycode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Industrydesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Companycode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Companydesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Creditstartdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Creditstatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Creditbankrupt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].T)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CvrEntry[0].Version)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CvrEntry) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VAT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Zipcode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.protected)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Startdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enddate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employees)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Addressco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Industrycode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Industrydesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Companycode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Companydesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creditstartdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creditstatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creditbankrupt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
